@@ -32,9 +32,12 @@ public class SmallestAndLargestSum{
 				smallest = secondNo;
 				largest = thirdNo;
 			}
-				
-			System.out.println("Smallest: "+ smallest);
-			System.out.println("Largest: "+ largest);
+						
+			System.out.println("Smallest Number is: "+ smallest);
+			System.out.println("Largest Number is: "+ largest);
+
+			int sum = smallest + largest;
+			System.out.println("Sum of largest and smallest number is: " + sum);
 		}
 	}
 }
