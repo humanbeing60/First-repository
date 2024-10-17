@@ -1,10 +1,10 @@
-FROM OpenJDK:latest
+FROM openjdk:latest
 
 WORKDIR /app
 
 COPY . /app
 
-RUN SmallestAndLargestSum.java
+RUN javac SmallestAndLargestSum.java
 
 CMD ["java","SmallestAndLargestSum"]
 
