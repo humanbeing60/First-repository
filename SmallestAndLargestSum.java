@@ -14,7 +14,27 @@ public class SmallestAndLargestSum{
 	
 			System.out.println("Enter third number: ");
 			int thirdNo = sc.nextInt();
-		
+
+			int smallest = 0;
+			int largest = 0;
+
+			if ( firstNo < secondNo && firstNo < thirdNo ) {
+				smallest = firstNo;
+				if ( secondNo > thirdNo ){
+					largest = secondNo;
+				}
+			}else if ( secondNo < firstNo && secondNo < thirdNo ){
+				smallest = secondNo;
+				if ( firstNo > thirdNo ){
+					largest = firstNo;
+				}
+			} else {
+				smallest = secondNo;
+				largest = thirdNo;
+			}
+				
+			System.out.println("Smallest: "+ smallest);
+			System.out.println("Largest: "+ largest);
 		}
 	}
 }
