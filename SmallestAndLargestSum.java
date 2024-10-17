@@ -1,9 +1,8 @@
-// write a Java program that accepts 3 numbers from the user and finds the sum of the smallest and the largest.
 import java.util.Scanner;
 
 public class SmallestAndLargestSum{
 
-	public static void main(){
+	public static void main(String [] args){
 		
 		try(Scanner sc = new Scanner( System.in ) ){
 
@@ -15,12 +14,9 @@ public class SmallestAndLargestSum{
 	
 			System.out.println("Enter third number: ");
 			int thirdNo = sc.nextInt();
-
-			int smallest
-	
-			int sum = smallest + largest;
-			System.out.println( "The sum of smalest and largest number is:" + sum );
 		
 		}
 	}
 }
+
+// write a Java program that accepts 3 numbers from the user and finds the sum of the smallest and the largest.
